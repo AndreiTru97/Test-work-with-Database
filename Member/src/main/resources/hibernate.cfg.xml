@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/testV2?serverTimezone=Europe/Moscow&amp;useUnicode=true&amp;CharacterEncoding=UTF-8</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">1234</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.connection.useUnicode">true</property>
+        <property name="hibernate.connection.characterEncoding">UTF-8</property>
+        <property name="hibernate.auto_quote_keyword">true</property>
+
+        <mapping resource="model/Members.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>
